@@ -1,0 +1,18 @@
+/* Page Transition Styles */
+body {
+  transition: opacity 0.5s ease;
+}
+
+body.page-exit {
+  opacity: 0;
+}
+
+/* Prevent scrolling during transition */
+body.page-exit {
+  overflow: hidden;
+}
+
+/* Ensure content is visible on page load */
+body.page-enter {
+  opacity: 1;
+}
